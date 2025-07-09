@@ -4,10 +4,10 @@ export const uploadInvoiceThumbnail = async (imageData) => {
     const formData = new FormData();
     formData.append("file", imageData);
     formData.append("upload_preset", "test_thumbnail");
-    formData.append("cloud_name", "#Your_cloudname");
+    formData.append("cloud_name", "dxawgrkdy");
 
     const res = await axios.post(
-        `https://api.cloudinary.com/v1_1/#Your_cloudname/image/upload`,
+        `https://api.cloudinary.com/v1_1/dxawgrkdy/image/upload`,
         formData
     );
 
